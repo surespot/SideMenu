@@ -318,7 +318,7 @@ open class SideMenuManager : NSObject {
  
      - Returns: The array of screen edge gestures added to `toView`.
      */
-    @discardableResult open class func menuAddScreenEdgePanGesturesToPresent(toView: UIView, forMenu:UIRectEdge? = nil) -> [UIScreenEdgePanGestureRecognizer] {
+    @discardableResult open class func menuAddScreenEdgePanGesturesToPresent(toView: UIView, forMenu:UIRectEdge) -> [UIScreenEdgePanGestureRecognizer] {
         var array = [UIScreenEdgePanGestureRecognizer]()
         
         if forMenu != .right {
